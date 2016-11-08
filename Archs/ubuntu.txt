@@ -1,0 +1,6 @@
+lshw : hardware lister
+    -html       output device tree as an HTML page
+    -short      output device tree showing HW paths
+    -businfo    output device list showing bus info (e.g. USB, IDE, etc.)
+    -class class    only show give class of HW, class from -businfo
+
