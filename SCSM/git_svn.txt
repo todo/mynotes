@@ -1,0 +1,71 @@
+
+from: http://git.or.cz/course/svn.html
+
+                 git                                    svn
+--------------------------------------- ------------------------------------
+git init                                svnadmin create repo
+git add .                               svn import file://repo
+git commit 
+
+git clone http://url/pub/AliRoot        svn co http://url/svn/AliRoot/trunk
+git clone http://url/pub/AliRoot        svn co http://url/svn/AliRoot/tags/v5
+  git checkout v5
+
+git diff                                svn diff | less
+git diff rev path                       svn diff -rrev path
+
+git apply                               patch -p0
+
+git status                              svn status
+git fetch
+git log
+git merge
+
+git checkout path                       svn revert path
+
+git add file                            svn add file 
+git rm file                             svn rm file 
+git mv file                             svn mv file 
+
+git pull                                svn update
+git fetch && git merge
+
+git commit -a                           svn commit
+git commit -a -v                        
+git push
+
+git log                                 svn log | less
+git blame file                          svn blame file
+
+git show rev:path/to/file               svn cat url
+git show rev:path/to/directory          svn list url
+git show rev                            svn log -rrev url
+                                        svn diff -crev url
+
+git tag -a name                         svn copy http://url/svn/trunk 
+                                                 http://url/svn/tags/name 
+git tag -l                              svn list http://url/svn/tags/
+git show tag                            svn log --limit 1
+                                                http://url/svn/tags/tag
+
+git branch branch                       svn copy http://url/svn/trunk
+                                                 http://url/svn/branches/branch
+git checkout branch                     svn switch http://url/svn/branches/branch
+
+git branch                              svn listhttp://url/svn/branches
+
+git checkout rev                        svn update -r rev
+git checkout prevbranch                 svn update
+
+git merge branch                        svn merge -r 20:HEAD 
+                                            http://url.com/svn/branches/branch
+                                            (assuming the branch was created 
+                                             in revision 20 and you are inside
+                                             a working copy of trunk)
+
+git cherry-pick rev                     svn merge -c rev url
+
+git revert rev                          svn revert rev
+
+
+
