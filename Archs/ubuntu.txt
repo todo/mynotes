@@ -4,3 +4,15 @@ lshw : hardware lister
     -businfo    output device list showing bus info (e.g. USB, IDE, etc.)
     -class class    only show give class of HW, class from -businfo
 
+parted (the CLI brother of GParted) : a partition manipulation program
+    check       do a simple check on the filesystem
+
+    print [dev|free|list, all|num]  display partition table, avaiable
+                                    devices, free space, all found
+                                    partitions, or a particular partition
+
+    cp [FROM-DEV] FROM-NUM TO-NUM   copy FS to another partition
+
+    select DEVICE
+    set NUM FLAG STATE
+
