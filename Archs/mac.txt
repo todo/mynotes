@@ -1,0 +1,60 @@
+Hold during startup
+...................................
+  C                            -- startup from bootable CD/USB/etc
+
+  D                            -- hardware test/diagnostics
+  Opt + D                      -- hardware test/diagnostics over internet
+
+  Cmd + R                      -- Startup OSX Recovery
+  Cmd + Opt + R                -- Startup OSX Recovery over the Internet
+
+  Cmd + S                      -- Startup in single-user mode
+
+  T                            -- startup in target disk mode
+
+shift + Control + Eject        -- lock desktop (snow leopard)
+shift + Command + Q            -- to logout
+
+shift + Command + Delete            -- to empty your trash, w/ prompt
+shift + Command + Option + Delete   -- to empty your trash, w/o prompt
+
+Option + Command + W           -- to close all the windows in an application
+Option + Command + D           -- to show or hide the Dock
+
+Command + Shift + 3            -- capture the screen to a file
+Control + Command + Shift + 3  -- capture the screen to the clipboard
+
+Command + Shift + 4            -- capture a selection to a file
+Control + Command + Shift + 4  -- capture a selection to the clipboard
+
+Cmd+shift+G                    -- go to a particular folder
+
+Opt+Cmd+Esc                    -- choose an app to quick
+Opt+Shift+Cmd+Esc              -- choose an app to quick
+
+
+Cmd+Opt+p+r                    -- resetting NVRAM
+                                step #1: shutdown
+                                step #2: turn on mac
+                                step #3: press Opt+Cmd+P+R when hear sounds
+                                step #4: hold these keys until the computer
+                                         restarts and you hear the startup
+                                         sound for a second time.
+
+
+Cmd+Opt+O+F                    -- resetting NVRAM using Open Firmware
+                                step #1: restart mac, at the same time
+                                         hold down Opt+Cmd+O+F
+                                step #2: boot into ">" prompt
+                                step #3: type the following 3 lines
+                                         (end the line with a <RETRUN>
+                                         a) reset-nvram
+                                         b) set-defaults
+                                         c) reset-all
+
+Ctrl+Cmd+Power button          -- force mac to restart
+Ctrl+Cmd+eject                 -- quit all apps, then restart
+Ctrl+Opt+Cmd+(power or eject)  -- quit all apps, then shutdown
+
+Ctrl+Shift+Power button        -- put display to sleep
+
